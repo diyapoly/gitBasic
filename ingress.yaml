@@ -15,4 +15,4 @@ spec:
       - path: /currency-conversion/*
         backend:
           serviceName: currency-conversion
-          servicePort: 9000
+          servicePort: 7000
