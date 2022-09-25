@@ -11,7 +11,7 @@ services:
   currency-conversion:
     image: in28min/currency-conversion:0.0.1-RELEASE
     ports:
-      - "8100:8990"
+      - "8100:8103"
     restart: always
     
     environment:
