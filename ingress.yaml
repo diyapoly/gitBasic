@@ -16,4 +16,3 @@ spec:
         backend:
           serviceName: currency-conversion
           servicePort: 9000
-
