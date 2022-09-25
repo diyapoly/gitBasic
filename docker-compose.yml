@@ -3,7 +3,7 @@ services:
   currency-exchange:
     image: in28min/currency-exchange:0.0.1-RELEASE
     ports:
-      - "8000:8000"
+      - "8000:9000"
     restart: always
     networks:
       - currency-compose-network
@@ -11,8 +11,9 @@ services:
   currency-conversion:
     image: in28min/currency-conversion:0.0.1-RELEASE
     ports:
-      - "8100:8100"
+      - "8100:8990"
     restart: always
+    
     environment:
       CURRENCY_EXCHANGE_SERVICE_HOST: http://currency-exchange
     depends_on:
